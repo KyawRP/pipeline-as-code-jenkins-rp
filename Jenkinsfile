@@ -70,6 +70,7 @@ sh'mvn install -Dmaven.test.skip=true'
                         sh "echo ${APP_ENV}"
                          }
                 }
+           }
         }
 
         stage('Printing All Global Variables') {
@@ -79,7 +80,6 @@ sh'mvn install -Dmaven.test.skip=true'
                     """
                  }
            }
-        }
 
     }   
 }
