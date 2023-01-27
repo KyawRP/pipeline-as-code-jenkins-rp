@@ -10,12 +10,12 @@ pipeline {
         maven 'maven3'
     }
 
-    options {
+/*    options {
 buildDiscarderlogRotator( 
 daysToKeepStr: '15', 
 numToKeepStr: '10'
             )
-    }
+    } */
 
     environment {
         APP_NAME = "STUDENT_APP"
@@ -43,11 +43,11 @@ userRemoteConfigs: [[url: 'https://github.com/spring-projects/spring-petclinic.g
             }
         }
 
-        stage('Code Build') {
+      /*  stage('Code Build') {
             steps {
 sh'mvn install -Dmaven.test.skip=true'
             }
-        }
+        } */
 
         stage('Printing All Global Variables') {
             steps {
